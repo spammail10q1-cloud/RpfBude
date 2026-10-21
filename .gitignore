@@ -5,3 +5,4 @@ obj/
 ngenc_a.bin
 ngenc_b.bin
 *.bak_*
+tools/payload/

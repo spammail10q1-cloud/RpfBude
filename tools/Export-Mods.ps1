@@ -26,7 +26,7 @@ $files += @(
 )
 
 # LSPDFR selbst
-$files += @('plugins\LSPD First Response.dll', 'plugins\LSPDFR\LSPDFR.dll')
+$files += @('plugins\LSPD First Response.dll')
 
 # Alle Plugins
 $dirs += @('plugins\LSPDFR')
