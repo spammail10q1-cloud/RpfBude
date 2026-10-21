@@ -1,0 +1,7 @@
+bin/
+obj/
+*.user
+*.suo
+ngenc_a.bin
+ngenc_b.bin
+*.bak_*
