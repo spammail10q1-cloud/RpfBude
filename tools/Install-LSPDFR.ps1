@@ -86,4 +86,9 @@ Write-Host ""
 Write-Host "Start: RAGEPluginHook.exe   (nicht ueber Steam)" -ForegroundColor Cyan
 Write-Host "Im Spiel: E = on duty, B = Ultimate Backup, G = Stop The Ped, F4 = Trainer" -ForegroundColor Cyan
 Write-Host ""
-Write-Host "Fehlt RAGEPluginHook.exe, zuerst die LSPDFR-Manual-Installation ausfuehren." -ForegroundColor DarkGray
+$rph = Join-Path $GamePath 'RAGEPluginHook.exe'
+if (Test-Path $rph) {
+    Write-Host "RAGEPluginHook.exe vorhanden." -ForegroundColor Green
+} else {
+    Write-Host "RAGEPluginHook.exe FEHLT. Liegt sie im Unterordner 'RAGE-separat', dorthin kopieren." -ForegroundColor Red
+}
